@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-page-bg: #f8f8f8;
+  --color-card-bg: #ffffff;
+  --color-text: #000000;
+  --color-link: #0000aa;
+
+  --color-badge-default: #d8d8d8;
+  --color-badge-html: rgb(201, 132, 4);
+  --color-badge-css: rgb(0, 145, 255);
+
+  --shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: monospace;
+  padding: 4rem 2rem;
+  background-color: var(--color-page-bg);
+  color: var(--color-text);
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.title {
+  margin-bottom: 3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.projects__item {
+  width: 100%;
+  max-width: 300px;
+  background-color: var(--color-card-bg);
+  box-shadow: var(--shadow);
+  transition: border-color 0.3s;
+}
+
+.projects__container {
+  padding: 2rem;
+}
+
+.projects__link {
+  text-decoration: none;
+  color: var(--color-link);
+  transition: 0.3s;
+}
+
+.projects__stack {
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.projects__badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  background-color: var(--color-badge-default);
+  border-radius: 2px;
+  font-size: 0.75rem;
+}
+
+.projects__badge--html {
+  background-color: var(--color-badge-html);
+  color: #ffffff;
+}
+
+.projects__badge--css {
+  background-color: var(--color-badge-css);
+  color: #ffffff;
+}
